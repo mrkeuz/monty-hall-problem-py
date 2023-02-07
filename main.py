@@ -1,6 +1,6 @@
-from numpy import random
-import numpy as np
 import time
+
+from numpy import random
 
 
 def MontyHallSimulation(N):
