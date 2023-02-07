@@ -1,6 +1,6 @@
 import time
 
-from numpy import random
+import random
 
 
 def MontyHallSimulation(N):
@@ -12,7 +12,7 @@ def MontyHallSimulation(N):
         WinningDoor = random.choice(['Door 1', 'Door 2', 'Door 3'])
 
         # 2) The contestant selects a random door.
-        FirstSelection = random.choice(['Door 1', 'Door 2', 'Door 3'])
+        FirstSelection = random.choice(list({'Door 1', 'Door 2', 'Door 3'}))
 
         # 3) The host opens a door that is different than the contestants choice
         #    and not the door with the car.
